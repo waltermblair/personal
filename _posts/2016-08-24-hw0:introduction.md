@@ -8,3 +8,4 @@ Biology here at the College a few years ago. I'm aiming for a graduate degree in
 really enjoy programming and have some science questions I'm interested in exploring.</p>
 <p>I have a lovely wife and two crazy dogs, and I'm going on my 7th year living on James Island which I really love. I look
 forwarding to getting to know all of you!<p>
+<p>A new favorite quote, at least on Mondays: "Nothing even convincing, much less exciting, has yet emerged from such efforts. I am persuaded that nothing will" --Frederick P. Brooks, Jr</p>
