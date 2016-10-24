@@ -1,0 +1,16 @@
+---
+layout: post
+title: "HW19: Team Progress I"
+date: 2016-10-23
+--- 
+This project has been super frustrating! We started with the instant messaging platform Pidgin and worked on it up to the crunch time before Deliverable #3 and realized that it was too complex to break down into little testable pieces. We were initially misled by what looked to be an existing testing framework, but it turns out that the lack of documentation, lack of response from communication requests sent to the development team, and integration of every function with complicated data structures and/or encryption protocols made progress on this project impossible within our timeframe.  
+
+On October 18th, we decided to switch over to the ph-7 Simple-Java-Calculator that we found on github. This calculator has a simple GUI interface and three Java files, two of which run the GUI. This simple project gives us one Java file that contains the underlying calculator functions and gives us hope that we can catch up!
+
+Our progress so far has been rapid. We quickly developed a simple driver that was able to instantiate an objedct of the Calculator class and call methods that only use one parameter (e.g. square, squareRoot, oneDividedBy, cos, sin, tan). After demonstrating that we were able to run these methods at the command line, we developed an automated framework whereby a script would run compile and run the driver with predefined parameters. With the script working, we started adding testcase.txt files. We weren't sure whether it would be better to let the script read the testcase parameters and pass them to the driver or pass the testcase filename to the driver and let the driver read the parameters, but we decided to let the script pass the filename to the driver and have the driver read the file, largely because of our greater familiarity with Java scanning. 
+
+One interesting choice here is that the driver can run all of the Mono functions that take one Double as an input. Rather than having one driver per testcase, where the script would choose which driver to run, we instead let the script simply decide whether to run the Mono or Bi function driver and let the driver choose which function it will run based on what it reads in the test case. We think this works well.
+
+After getting the driver to read and use parameters specified in the testcase files, we worked on the report.html file produced by the script. We let the script create the report, and then the driver adds to the report as it runs tests. The driver also runs the associated oracle.java which also works for all of the Mono or Bi functions, depending on what driver is being used. Finally, the oracle expected results are compared with the project actual results, and a final entry of pass/fail is added to the report before the script then displays the finished report in the browser.
+
+So, this project has been frustrating, but we have learned a lot about compiling with options in Java (and C), manipulating text in existing files, and helping files locate dependencies in other directories. After working out how to organize the framework, the implementation came together fairly quickly. 
