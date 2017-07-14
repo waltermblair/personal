@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CSIS 604 - Paper 1"
+title: "CSIS 604 - MapReduce"
 date: 2017-07-05
 ---
 <b>MapReduce</b>
