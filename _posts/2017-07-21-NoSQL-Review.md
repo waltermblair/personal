@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CSIS 604 - Hive"
+title: "CSIS 604 - NoSQL Review"
 date: 2017-07-21
 ---
 <b>NoSQL Review</b>  
