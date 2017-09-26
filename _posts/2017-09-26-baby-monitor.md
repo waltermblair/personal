@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Baby Monitor"
+date: 2017-09-26
+---
+<b>Baby Monitor</b>  
+
+Almost ready! Our baby boy is due in November, and I'm almost finished with the baby monitor. The camera itself is a Raspberry Pi 3 in a standard case with a NoIR camera and USB microphone. I started out by following [Aaron's tutorial](https://www.element14.com/community/community/raspberry-pi/raspberrypi_projects/blog/2016/04/25/noir-v2-video-streaming-baby-monitor) which explained what the physical setup as well as the use of the RPi Cam Web Interface suite and a custom alert script that links the interface's integrated motion detection with Instapush. The monitor is a retired Oneplus One that Nora used to use until I broke the screen. I [replaced the screen](https://www.amazon.com/gp/product/B01N2VTJDC/ref=oh_aui_search_detailpage?ie=UTF8&psc=1), and it has come back to life as our baby monitor.
+
+I followed the physical camera setup of the tutorial with the exception of the night-vision capability. The NoIR camera has perfectly fine daytime imaging for my purposes but just like any other night-vision camera requires IR LED's to see in the pitch black. I weighed my admittedly overly-cautious reservations about directing IR LED's toward my child's eyes 24/7 against the fact that we'll nearly always have a dim nightlight on in the nursery for our own benefit and the vanishingly low likelihood that I'll be lying awake in bed hoping to watch the video stream at night, and I decided that I actually prefer the lack of LED's over any other monitor I would buy at a store.  
+
+The RPi Cam interface and local network stream is beautiful, so no changes there compared to the walkthrough. I did motify the alert script somewhat, because I don't need to activate/deactivate the LED's and also because I Instapush seems to have simplified [their API](https://instapush.im/developer/rest) a bit since the tutorial was written. 
+
+With the whole motion-detection / push notification thing working, the next step was to integrate an audio stream. I originally thought that all I'd need would be a camera, but several of our friends use only the audio on their monitors. For audio streaming, I followed [Matt Kaar's tutorial](http://mattkaar.com/blog/2013/05/26/web-streaming-with-the-raspberry-pi-baby-monitor/) to use Icecast for the local network mp3 stream. The darkice install was all really straightforward, and within a few minutes I was able to listen in on the icecast stream on my laptop. It took a few extra minutes, but I got the VLC app on the monitor tuned in as well.
+
+The remaining to-do's are that the motion detection and icecast daemons aren't running simultaneously right now, so I just need to tweak the bashrc startup commands for those I think, and I also want to make a centralized app with one-click access to each stream. Currently I just have a bookmark icon on the monitor that goes straight to the video stream and a separate VLC icon that lists the mp3 stream. I tried putting everything together really fast with AppInventor, but I was stuck with a 702 error with the icecast stream that I haven't solved. I think this problem may be on AppInventor's end, so I might have some fun with real mobile app design that should coincide with my 602 project this semester.
