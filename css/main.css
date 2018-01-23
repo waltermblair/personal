@@ -33,20 +33,20 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
+ul.post { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
 
-ol.posts { 
+ol.post { 
     margin: 20px auto 40px; 
     font-size: 3.5em;
 }
 
-ul.posts li {
+ul.post li {
     list-style: none;
 }
 
-ol.posts li {
+ol.post li {
     list-style: none;
 }
