@@ -12,17 +12,12 @@ In my project management class last night, we discussed our results from the [In
 The ultimate goal of this semester, and of any M.S. thesis, is to gather some good data in order to test a hypothesis. I look forward to working out the details of my next experiments, but I'm not quite there yet. I plan to spend the next few weeks gaining a firm understanding of how Ignite fits into the broader context of alternative approaches and competing technologies designed to solve related problems. Armed with this global understanding, I expect that the finer-grained details of specific use cases and the implementation details that I'll need to work out to design good experiments will fall into place more easily.
 
 All that to say, here is my near-term plan:
-
 1. Week 1 - Place Ignite in context
   * OLAP v. OLTP
   * DSM v. Spark
-
 2. Week 2 - Place related work / competition in context
   * current HTAP technologies
-
 3. Week 3 - Summarize Ignite use cases & resume IGFS setup
-
 4. Week 4 - Identify our demo use cases & finish IGFS setup
-
 5. Week 5+ - Build pipelines & gather data
 
