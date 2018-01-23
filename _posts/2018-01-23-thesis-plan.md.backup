@@ -14,11 +14,11 @@ The ultimate goal of this semester, and of any M.S. thesis, is to gather some go
 All that to say, here is my near-term plan:
 
 1. Week 1 - Place Ignite in context
-  * OLAP v. OLTP
-  * DSM v. Spark
+  * OLAP v. OLTP  
+  * DSM v. Spark  
 
-2. Week 2 - Place related work / competition in context
-  * current HTAP technologies
+2. Week 2 - Place related work / competition in context  
+  * current HTAP technologies  
 
 3. Week 3 - Summarize Ignite use cases & resume IGFS setup
 
