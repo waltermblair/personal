@@ -31,7 +31,7 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-}
+}   
 
 ul.post { 
     margin: 20px auto 40px; 
@@ -44,9 +44,5 @@ ol.post {
 }
 
 ul.post li {
-    list-style: none;
-}
-
-ol.post li {
     list-style: none;
 }
